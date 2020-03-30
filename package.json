@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.648.0",
+    "command-line-args": "^5.1.1",
+    "glob": "^7.1.6",
+    "sprintf-js": "^1.1.2"
+  },
+  "scripts": {
+    "create-secrets": "./create-secrets.js"
+  }
+}
