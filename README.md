@@ -11,3 +11,15 @@ $ yarn run create-secrets --path "./secrets/path/to/dir/*.json"
 $ yarn run create-secrets --path "./secrets/path/to/dir/*.json" --force
 ```
 
+
+ランダムパスワードの生成
+
+```sh
+$ yarn run random-password
+```
+
+ランダムパスワードの生成とpasswordの更新
+
+```sh
+$ yarn run put-secret-value --secret_name "secret/name"
+```

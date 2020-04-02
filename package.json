@@ -6,6 +6,8 @@
     "sprintf-js": "^1.1.2"
   },
   "scripts": {
-    "create-secrets": "./create-secrets.js"
+    "create-secrets": "./create-secrets.js",
+    "random-password": "./random-password.js",
+    "put-secret-value": "./put-secret-value.js"
   }
 }
