@@ -22,6 +22,8 @@ result
 .then(secret => {
   return new Promise((resolve, reject) => {
     const params = {
+      RequireEachIncludedType: true, // 大小数字記号を必ず含む
+      ExcludeCharacters: "/@\"\'\\", // 特定の文字を除外
       IncludeSpace: false,
       PasswordLength: 32,
     };

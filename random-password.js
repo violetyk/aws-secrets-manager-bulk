@@ -10,14 +10,13 @@ const options = commandLineArgs(optionDefinitions);
 const secretsManager = new aws.SecretsManager({region: options.region});
 
 const params = {
-  // ExcludeLowercase: true,
-  // ExcludeNumbers: true,
-  // ExcludePunctuation: true,
-  // ExcludeUppercase: true,
+  RequireEachIncludedType: true, // 大小数字記号を必ず含む
+  ExcludeCharacters: "/@\"\'\\", // 特定の文字を除外
+  // ExcludePunctuation: true, // 記号を除外
   IncludeSpace: false,
   PasswordLength: 32,
-  // RequireEachIncludedType: true
 };
+
 
  secretsManager.getRandomPassword(params, (err, data) => {
    if (err) console.log(err, err.stack);
